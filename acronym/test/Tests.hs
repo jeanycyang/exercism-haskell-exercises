@@ -20,7 +20,12 @@ data Case = Case { description :: String
                  }
 
 cases :: [Case]
-cases = [ Case { description = "basic"
+cases = [
+         Case { description = "camelcase"
+               , input       = "HyperText Markup Language"
+               , expected    = "HTML"
+               }
+        , Case { description = "basic"
                , input       = "Portable Network Graphics"
                , expected    = "PNG"
                }
@@ -31,10 +36,6 @@ cases = [ Case { description = "basic"
         -- Although this case was removed in specification 1.1.0,
         -- the Haskell track has chosen to keep it,
         -- since it makes the problem more interesting.
-        , Case { description = "camelcase"
-               , input       = "HyperText Markup Language"
-               , expected    = "HTML"
-               }
         , Case { description = "punctuation"
                , input       = "First In, First Out"
                , expected    = "FIFO"

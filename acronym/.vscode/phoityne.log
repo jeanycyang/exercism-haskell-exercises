@@ -1,0 +1,8 @@
+2018-01-30 18:10:30 [ThreadId 7] ERROR phoityne - "error: Variable not in scope: factors"
+2018-01-30 18:10:30 [ThreadId 7] ERROR phoityne - "error: \8226 Variable not in scope: num \8226 Perhaps you meant \8216sum\8217 (imported from Prelude)"
+2018-01-30 18:10:30 [ThreadId 7] ERROR phoityne - "error: Variable not in scope: limit"
+2018-01-30 18:10:30 [ThreadId 7] ERROR phoityne - "error: Variable not in scope: x"
+2018-01-30 18:10:30 [ThreadId 7] ERROR phoityne - "error: Variable not in scope: xs"
+2018-01-30 18:10:30 [ThreadId 7] ERROR phoityne - "error: Variable not in scope: multiples"
+2018-01-30 18:10:39 [ThreadId 7] ERROR phoityne - "error: Variable not in scope: camelCased"
+2018-01-30 18:26:03 [ThreadId 7] ERROR phoityne - "error: Data constructor not in scope: String"
