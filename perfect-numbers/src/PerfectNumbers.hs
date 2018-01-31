@@ -19,9 +19,10 @@ aliquots n
 findAliquots :: Int -> Int -> [Int] -> [Int]
 findAliquots n dividend output
   | dividend == n = output
-  | (output !! 0 - output !! 1) <= 1 = output
-  | isInt quotient = findAliquots n (dividend+1) ([quotient,dividend]++output)
+  | dividend `elem` output = output
+  | remainder == 0 = findAliquots n (dividend+1) (newAliquots++output)
   | otherwise = findAliquots n (dividend+1) output
-  where quotient = n / dividend
+  where remainder = n `mod` dividend
+        quotient = n `div` dividend
+        newAliquots = if dividend == quotient then [quotient] else [quotient,dividend]
 
-isInt x = x == fromInteger (round x)
